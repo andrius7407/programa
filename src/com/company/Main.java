@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner skaneris = new Scanner(System.in);
-        System.out.println("labas, kuria uzduoti vykdyti?(ivesti 1-6)");
+        System.out.println("labas, kuria uzduoti vykdyti?(ivesti 1-13)");
         int numeris = skaneris.nextInt();
         switch (numeris) {
             // write your code here
@@ -53,7 +53,13 @@ public class Main {
                 objektas6.prasymas_m();
                 objektas6.kmi();
                 break;
-                // write your code here
+
+            case 13:
+                tryliktas objektas13 = new tryliktas();
+                objektas13.prasymas1();
+                System.out.println("ivesto skaiciaus kvadratas yra " + objektas13.skaiciavimas());
+                break;
+            // write your code here
         }
     }
 }
